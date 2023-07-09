@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Barbershop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230420142716">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<header class="header">
+				<a href="#home" class="scroll-to-home"><svg>
+						<use href="img/icons/icons.svg#icon-scroll-to-up"></use>
+					</svg></a>
+				<div class="header__container">
+					<nav class="header__nav">
+						<!-- lOGO -->
+						<a class="header__logo" href="">
+							<picture>
+								<source media="(max-width:767.98px)" srcset="img/logowhite.svg">
+								<source media="(min-width:768px)" srcset="img/logo.svg">
+								<img src="img/logo.svg" srcset="img/logo.svg" alt="">
+							</picture>
+						</a>
+
+						<!-- Меню Десктоп -->
+						<ul class="header__menu">
+							<li class="header__item">
+								<a href="#about" class="header__link">About</a>
+							</li>
+							<li class="header__item">
+								<a href="#price" class="header__link">Services and prices</a>
+							</li>
+							<li class="header__item">
+								<a href="#barbers" class="header__link">Barbers</a>
+							</li>
+							<li class="header__item">
+								<a href="#contacts" class="header__link">Contacts</a>
+							</li>
+						</ul>
+
+						<!-- Меню  бургер -->
+
+						<button class="menu-toggle js-open-menu modal-scroll" aria-expanded="false" aria-controls="mobile-menu">
+							<svg class="menu-button-icon" width="24" height="24">
+								<use href="img/icons/icons.svg#burger"></use>
+							</svg>
+						</button>
+
+						<div class="menu-container js-menu-container" id="mobile-menu">
+							<div class="backdrop">
+								<button type="button" class="menu-toggle js-close-menu modal-scroll">
+									<svg class="menu-button-close" width="24" height="24">
+										<use href="img/icons/icons.svg#close"></use>
+									</svg>
+								</button>
+								<!-- Mobile menu -->
+								<ul class="header__mobile-menu header-mobile__menu">
+									<li class="header-mobile__item">
+										<a href="#about" class="modal-scroll header-mobile__link nav-menu-link">About</a>
+									</li>
+									<li class="header-mobile__item">
+										<a href="#price" class="modal-scroll header-mobile__link nav-menu-link">Services and prices</a>
+									</li>
+									<li class="header-mobile__item">
+										<a href="#barbers" class="modal-scroll header-mobile__link nav-menu-link">Barbers</a>
+									</li>
+									<li class="header-mobile__item">
+										<a href="#contacts" class="modal-scroll header-mobile__link nav-menu-link">Contacts</a>
+									</li>
+								</ul>
+
+								<ul class="header__mobile-actions header-mobile-actions">
+									<li class="header-mobile-actions__item">
+										<a href="tel:+380441111111" class="header-mobile-actions__link modal-scroll nav-menu-link">+38 044 111 11 11</a>
+									</li>
+									<li class="header-mobile-actions__item">
+										<a href="#contacts" class="header-mobile-actions__link_button button modal-scroll nav-menu-link">Online-booking</a>
+									</li>
+								</ul>
+
+								<ul class="header__mobile-social mobile-social-header__menu">
+									<li class="mobile-social-header__item">
+										<a class="mobile-social-header__link nav-menu-link" href="http://instagram.com">Instagram</a>
+									</li>
+									<li class="mobile-social-header__item">
+										<a class="mobile-social-header__link nav-menu-link" href="http://youtube.com">Youtube</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Меню Активности -->
+						<ul class="header__action-menu header-action-menu">
+							<li class="header-action-menu__item">
+								<a href="tel:+380441111111" class="header-action-menu__link">+38 044 111 11 11</a>
+							</li>
+							<li class="header-action-menu__item">
+								<a href="#contacts" class="header-action-menu__button button">Online-booking</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+
+			<section class="hero" id="home">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="heroaside">
+							<ul class="hero__social hero-social">
+								<li class="hero-social__item">
+									<a class="hero-social__link social-link" target="_blank" href="http://instagram.com">Instagram</a>
+								</li>
+								<li class="hero-social__item">
+									<a class="hero-social__link social-link" target="_blank" href="http://youtube.com">Youtube</a>
+								</li>
+							</ul>
+						</div>
+						<div class="hero__content hero-content">
+							<h2 class="hero-content__subtitle subtitle">A hair salon for men in Kyiv</h2>
+							<h1 class="hero-content__title">BarberShop</h1>
+							<p class="hero-content__text text">
+								We are experts in trendy men’s haircuts.<br>Work quickly, carefully and
+								with style.
+							</p>
+							<ul class="hero__content-actions hero-content-actions">
+								<li class="hero-content-actions__item">
+									<a href="" class="hero-content-actions__link">Back</a>
+								</li>
+								<li class="hero-content-actions__item">
+									<a href="" class="hero-content-actions__link">Forward</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="about" id="about">
+				<div class="about__container">
+					<ul class="about__images-row row-images">
+						<li class="row-images__item">
+							<picture>
+								<source media="(max-width:1199px)" srcset="img/about-item1-tablet-x1.jpg 1x, img/about-item1-tablet-x2.jpg 2x">
+								<source media="(min-width:1200px)" srcset="img/about-item1-desktop-x1.jpg 1x, img/about-item1-desktop-x2.jpg 2x">
+
+								<img src="img/about-item1-desktop-x1.jpg" srcset="img/about-item1-desktop-x1.jpg 2x" alt="exthample of work our barber #1" width="267" />
+							</picture>
+						</li>
+						<li class="row-images__item">
+							<picture>
+								<source media="(max-width:1199px)" srcset="img/about-item2-tablet-x1.jpg 1x, img/about-item2-tablet-x2.jpg 2x">
+								<source media="(min-width:1200px)" srcset="img/about-item2-desktop-x1.jpg 1x, img/about-item2-desktop-x2.jpg 2x">
+
+								<img src="img/about-item1-desktop-x1.jpg" srcset="img/about-item1-desktop-x1.jpg 2x" alt="exthample of work our barber #1" width="267" />
+							</picture>
+						</li>
+					</ul>
+					<div class="content__about about-content">
+						<h3 class="about-content__subtitle subtitle">About</h3>
+						<h2 class="about-content__title title">Best Barbershop in your city</h2>
+						<p class="about-content__description">
+							If you want to add more confidence to your image, you should definitely
+							visit us.
+						</p>
+						<p class="about-content__text text">
+							We are a team that never stops at what has been achieved and are thirsty
+							for changes. And when you fall into the hands of our master, you will
+							never be the same again. We are a team that is always "on the same wave"
+							with clients. Therefore, we are always ready to improve everyone who
+							comes to us!
+						</p>
+						<a href="#contacts" class="about-content__button button">ONLINE-BOOKING</a>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="price" id="price">
+				<div class="price__container">
+					<div class="price__content price-content">
+						<h3 class="price-content__subtitle">
+							Spend your time with the best masters
+						</h3>
+						<h2 class="price-content__title">Services and prices</h2>
+
+					</div>
+					<div class="price__tables-row">
+						<ul class="price__tables-menu price-table-menu">
+							<li class="price-table-menu__item">
+								Men’s haircut<span></span>from 300 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Beard trim <span></span>from 300 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Mustache trim <span></span>from 200 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Straight razor shave <span></span>from 200 uah.
+							</li>
+						</ul>
+
+
+						<ul class="price__tables-menu price-table-menu">
+							<li class="price-table-menu__item">
+								Trainee’s haircut <span></span>from 50 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Haircut under the nozzle <span></span>from 200 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Children’s haircut (0-12 y.o.) <span></span>from 200 uah.
+							</li>
+							<li class="price-table-menu__item">
+								Camouflage of gray hair <span></span>from 300 uah.
+							</li>
+						</ul>
+					</div>
+					<div class="price__actions price-actions"><a href="" class="price-actions__button">online-booking</a></div>
+				</div>
+			</section>
+
+
+			<section class="whyweare">
+				<div class="whyweare__container">
+					<div class="whyweare__testmonials testmonials-whyweare">
+						<ul class="testmonials-whyweare__menu">
+							<li class="testmonials-whyweare__items">
+								<h4 class="testmonials-whyweare__title">600<sup>&#43;</sup></h4>
+								<p class="testmonials-whyweare__text">Satisfied customers per day</p>
+							</li>
+
+							<li class="testmonials-whyweare__items">
+								<h4 class="testmonials-whyweare__title">50<sup>&#43;</sup></h4>
+								<p class="testmonials-whyweare__text">Awards for excellent service</p>
+							</li>
+						</ul>
+
+						<ul class="testmonials-whyweare__menu">
+							<li class="testmonials-whyweare__items">
+								<h4 class="testmonials-whyweare__title">20<sup>&#43;</sup></h4>
+								<p class="testmonials-whyweare__text">Kyiv’s best barbers</p>
+							</li>
+
+
+							<li class="testmonials-whyweare__items">
+								<h4 class="testmonials-whyweare__title">100<sup>&#43;</sup></h4>
+								<p class="testmonials-whyweare__text">Gifts for regular customers</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="whyweare__content content-whyweare">
+						<h3 class="content-whyweare__subtitle">Old traditional school</h3>
+						<h2 class="content-whyweare__title">&#191;Why people come<br> to us?&#63;</h2>
+						<p class="content-whyweare__text">
+							Only good things are said about us. But it's better to see and feel 1
+							time than read 10 times.
+						</p>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="team" id="barbers">
+				<div class="team__container">
+					<h3 class="team__subtitle">For true enjoyers of the atmosphere</h3>
+					<h2 class="team__title">Our barbers</h2>
+					<ul class="team__cards-row team-cards-row">
+						<li class="team-cards-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="
+              img/spesialist-item1-mobile-x1.jpg 1x,
+              img/spesialist-item1-mobile-x2.jpg 2x
+            " />
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="
+              img/spesialist-item1-tablet-x1.jpg 1x,
+              img/spesialist-item1-tablet-x2.jpg 2x
+            " />
+								<source media="(min-width:1200px)" srcset="
+              img/spesialist-item1-desktop-x1.jpg 1x,
+              img/spesialist-item1-desktop-x2.jpg 2x
+            " />
+								<img src="img/spesialist-item1-desktop-x1.jpg" srcset="img/spesialist-item1-desktop-x2.jpg" alt="" />
+							</picture>
+							<div class="team-cards-row__about-card-wrapper">
+								<h4 class="team-cards-row__name">John Smith</h4>
+								<p class="team-cards-row__profession">Extreme Barber</p>
+							</div>
+
+							<ul class="team__social team-social">
+								<li class="team-social__item">
+									<a href="http://instagram.com" rel="noreferrer noopener" aria-label="link on the instagram" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://twitter.com/?lang=en" rel="noreferrer noopener" aria-label="link on the twitter" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.facebook.com/" rel="noreferrer noopener" aria-label="link on the facebook" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.linkedin.com/" rel="noreferrer noopener" aria-label="link on the linkedin" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Card 2 -->
+						<li class="team-cards-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="
+              img/spesialist-item2-mobile-x1.jpg 1x,
+              img/spesialist-item2-mobile-x2.jpg 2x
+            " />
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="
+              img/spesialist-item2-tablet-x1.jpg 1x,
+              img/spesialist-item2-tablet-x2.jpg 2x
+            " />
+								<source media="(min-width:1200px)" srcset="
+              img/spesialist-item2-desktop-x1.jpg 1x,
+              img/spesialist-item2-desktop-x2.jpg 2x
+            " />
+								<img src="img/spesialist-item2-desktop-x1.jpg" srcset="img/spesialist-item2-desktop-x2.jpg" alt="" />
+							</picture>
+							<div class="team-cards-row__about-card-wrapper">
+								<h4 class="team-cards-row__name">Michele Doe</h4>
+								<p class="team-cards-row__profession">Extreme Barber</p>
+							</div>
+							<ul class="team__social team-social">
+								<li class="team-social__item">
+									<a href="http://instagram.com" rel="noreferrer noopener" aria-label="link on the instagram" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://twitter.com/?lang=en" rel="noreferrer noopener" aria-label="link on the twitter" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.facebook.com/" rel="noreferrer noopener" aria-label="link on the facebook" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.linkedin.com/" rel="noreferrer noopener" aria-label="link on the linkedin" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Card 3  -->
+						<li class="team-cards-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="
+              img/spesialist-item3-mobile-x1.jpg 1x,
+              img/spesialist-item3-mobile-x2.jpg 2x
+            " />
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="
+              img/spesialist-item3-tablet-x1.jpg 1x,
+              img/spesialist-item3-tablet-x2.jpg 2x
+            " />
+								<source media="(min-width:1200px)" srcset="
+              img/spesialist-item3-desktop-x1.jpg 1x,
+              img/spesialist-item3-desktop-x2.jpg 2x
+            " />
+								<img src="img/spesialist-item3-desktop-x1.jpg" srcset="img/spesialist-item3-desktop-x2.jpg" alt="" />
+							</picture>
+							<div class="team-cards-row__about-card-wrapper">
+								<h4 class="team-cards-row__name">Alan Black</h4>
+								<p class="team-cards-row__profession">Extreme Barber</p>
+							</div>
+							<ul class="team__social team-social">
+								<li class="team-social__item">
+									<a href="http://instagram.com" rel="noreferrer noopener" aria-label="link on the instagram" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://twitter.com/?lang=en" rel="noreferrer noopener" aria-label="link on the twitter" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.facebook.com/" rel="noreferrer noopener" aria-label="link on the facebook" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="team-social__item">
+									<a href="https://www.linkedin.com/" rel="noreferrer noopener" aria-label="link on the linkedin" class="team-social__link" target="_blank">
+										<svg width="20" height="20">
+											<use xlink:href="img/icons/icons.svg#linkedin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="works">
+				<div class="works__container">
+					<h2 class="works__title">In Latin, "barba" means "beard"</h2>
+					<ul class="works__images-row images-row">
+						<li class="images-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="img/product-item1-mobile-x1.jpg 1x, img/product-item1-mobile-x2.jpg 2x">
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="img/product-item1-tablet-x1.jpg 1x, img/product-item1-tablet-x2.jpg 2x">
+								<source media="(max-width:1200px)" srcset="img/product-item1-desktop-x1.jpg 1x, img/product-item1-desktop-x2.jpg 2x">
+								<img src="img/product-item1-desktop-x1.jpg" srcset="img/product-item1-desktop-x2.jpg" alt="">
+							</picture>
+						</li>
+
+						<li class="images-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="img/product-item2-mobile-x1.jpg 1x, img/product-item2-mobile-x2.jpg 2x">
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="img/product-item2-tablet-x1.jpg 1x, img/product-item2-tablet-x2.jpg 2x">
+								<source media="(max-width:1200px)" srcset="img/product-item2-desktop-x1.jpg 1x, img/product-item2-desktop-x2.jpg 2x">
+								<img src="img/product-item2-desktop-x1.jpg" srcset="img/product-item2-desktop-x2.jpg" alt="">
+							</picture>
+						</li>
+
+						<li class="images-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="img/product-item3-mobile-x1.jpg 1x, img/product-item3-mobile-x2.jpg 2x">
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="img/product-item3-tablet-x1.jpg 1x, img/product-item3-tablet-x2.jpg 2x">
+								<source media="(max-width:1200px)" srcset="img/product-item3-desktop-x1.jpg 1x, img/product-item3-desktop-x2.jpg 2x">
+								<img src="img/product-item3-desktop-x1.jpg" srcset="img/product-item3-desktop-x2.jpg" alt="">
+							</picture>
+						</li>
+
+						<li class="images-row__item">
+							<picture>
+								<source media="(max-width:767px)" srcset="img/product-item4-mobike-x1.jpg x1, img/product-item4-mobike-x2.jpg 2x">
+								<source media="(min-width:768px) and (max-width:1199px)" srcset="img/product-item4-tablet-x1.jpg 1x, img/product-item4-tablet-x2.jpg 2x">
+								<source media="(max-width:1200px)" srcset="img/product-item4-desktop-x1.jpg 1x, img/product-item4-desktop-x2.jpg 2x">
+								<img src="img/product-item4-desktop-x1.jpg" srcset="img/product-item4-desktop-x2.jpg" alt="">
+							</picture>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="contacts" id="contacts">
+				<div class="contacts__container">
+					<div class="contacts__form-wrapper">
+						<form class="form-wrapper__form form-wrapper-contacts">
+							<h2 class="form-wrapper-contacts__title">Online-Booking</h2>
+							<input class="form-wrapper-contacts__input" type="text" name="name" placeholder="NAME*">
+							<input class="form-wrapper-contacts__input" type="text" name="phone" placeholder="PHONE*">
+							<textarea class="form-wrapper-contacts__comment" name="comment" placeholder="MESSAGE"></textarea>
+							<button class="form-wrapper-contacts__send-form" type="submit">SEND</button>
+						</form>
+					</div>
+					<div class="contacts__contact-wrapper contacts-contact-wrapper">
+						<h2 class="contacts-contact-wrapper__title">Contacts</h2>
+						<address>
+							<a class="contacts-contact-wrapper__adress">st. Vasilkivska, 7A<br>Kyiv, 08132
+							</a>
+							<a class="contacts-contact-wrapper__phone">
+								+38 044 111 11 11
+							</a>
+							<a class="contacts-contact-wrapper__mail">barbershop@email.com
+							</a>
+						</address>
+						<div class="adress-about">
+							<p class="contacts-contact-wrapper__subtitle">Working hours
+							</p>
+							<p class="contacts-contact-wrapper__text">Every day from 9:00 to 22:00</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<footer class="footer">
+				<div class="footer__container">
+					<p class="footer__description">&COPY; Copyright 2020</p>
+					<ul class="footer__social social-footer">
+						<li class="social-footer__item">
+							<a href="" class="social-footer__link">Instagram</a>
+						</li>
+						<li class="social-footer__item">
+							<a href="" class="social-footer__link">Youtube</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230420142716"></script>
+</body>
+
+</html>
